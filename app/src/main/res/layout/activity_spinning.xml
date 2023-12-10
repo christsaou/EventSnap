@@ -1,0 +1,57 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_grad"
+    tools:context=".spinningActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/citydetail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/bg_grardient_reverse"
+        android:elevation="10dp"
+        android:theme="?attr/actionBarTheme" />
+    <TextView
+        android:id="@+id/c_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/acme"
+        android:text="Major Events In Numerous Cities."
+        android:textAlignment="center"
+        android:textColor="#f3ffb6"
+        android:textSize="34sp"
+        android:layout_below="@id/citydetail_toolbar"/>
+
+    <Button
+        android:id="@+id/cdbookNow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custom_button_background"
+        android:fontFamily="@font/acme"
+        android:padding="5dp"
+        android:textColor="#f3ffb6"
+        android:layout_marginTop="10dp"
+        android:text="Βοοκ Now!"
+        android:textSize="30sp"
+        android:layout_below="@id/c_city"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cityRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cdbookNow2"
+        android:layout_marginTop="-2dp"
+
+        android:background="@android:color/transparent"
+        android:padding="16dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</RelativeLayout>
+

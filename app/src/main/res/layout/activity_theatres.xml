@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_grad">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/theatre_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/bg_grardient_reverse"
+        android:elevation="10dp"
+        android:theme="?attr/actionBarTheme" />
+
+
+    <TextView
+        android:id="@+id/theatre_textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/theatre_toolbar"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/acme"
+        android:padding="10dp"
+        android:text="Current Theatre events in Major Cities"
+        android:textAlignment="center"
+        android:textColor="#f3ffb6"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/theatre_recycler_view"
+        android:background="@drawable/bg_grad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/openTheatreInfoButton"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/openTheatreInfoButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/theatre_textViewTitle"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_button_background"
+        android:fontFamily="@font/acme"
+        android:textColor="#f3ffb6"
+        android:padding="20dp"
+        android:text="More Info"
+        android:textSize="22sp" />
+
+</RelativeLayout>

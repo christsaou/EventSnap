@@ -1,0 +1,65 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_grad"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mi_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="10dp"
+        android:theme="?attr/actionBarTheme" />
+
+    <!-- First ImageView for the first image -->
+    <ImageView
+        android:id="@+id/mi_imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="16dp" />
+
+    <!-- Second ImageView for the second image -->
+    <ImageView
+        android:id="@+id/mi_imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/eventInfoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="sadsadsadsdasdsdasd"
+        android:textColor="#f3ffb6"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            >
+    <ImageView
+        android:id="@+id/im1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/eventsnap_"/>
+    <ImageView
+        android:id="@+id/im2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@id/im1"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/skg_education"/>
+        </RelativeLayout>
+
+
+
+</LinearLayout>
+
+

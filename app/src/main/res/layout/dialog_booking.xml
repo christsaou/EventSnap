@@ -1,0 +1,67 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+
+
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/cart"/>
+
+   
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/acme"
+        android:text="Number of Tickets:"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/numTicketsEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/acme"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:inputType="number"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/totalPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/acme"
+        android:layout_margin="10dp"
+        android:text="Total Price: $0.00"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/confirmBookingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#f3ffb6"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:text="Confirm Booking"
+        android:background="@drawable/custom_button_background"
+        android:padding="10dp"
+        />
+</LinearLayout>
+
+
+
+
+
+

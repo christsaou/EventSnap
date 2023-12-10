@@ -1,0 +1,133 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+    
+    <!-- Images Container -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginEnd="16dp">
+
+        <!-- Image 1 -->
+        <ImageView
+            android:id="@+id/image1View"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Image 2 -->
+        <ImageView
+            android:id="@+id/image2View"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Image 3 -->
+        <ImageView
+            android:id="@+id/image3View"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Image 4 -->
+        <ImageView
+            android:id="@+id/image4View"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+
+    <!-- Text Views -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Data Fields -->
+<!--        <TextView-->
+<!--            android:id="@+id/idTextView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:fontFamily="@font/acme"-->
+<!--            android:textColor="#f3ffb6"-->
+<!--            android:textSize="20sp"/>-->
+
+        <TextView
+            android:id="@+id/eventTitleTextView"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/acme"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"/>
+
+        <TextView
+            android:id="@+id/locationTextView"
+            android:fontFamily="@font/acme"
+            android:textColor="#f3ffb6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/priceTextView"
+            android:fontFamily="@font/acme"
+            android:textColor="#f3ffb6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/venueTextView"
+            android:fontFamily="@font/acme"
+            android:layout_width="match_parent"
+            android:textColor="#f3ffb6"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/eventTypeTextView"
+            android:fontFamily="@font/acme"
+            android:layout_width="match_parent"
+            android:textColor="#f3ffb6"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:fontFamily="@font/acme"
+            android:textColor="#f3ffb6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"/>
+
+<!--        <TextView-->
+<!--            android:id="@+id/remainingTicketsTextView"-->
+<!--            android:fontFamily="@font/acme"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="#f3ffb6"-->
+<!--            android:textSize="20sp"/>-->
+
+        <TextView
+            android:id="@+id/eventDateTextView"
+            android:fontFamily="@font/acme"
+            android:layout_width="match_parent"
+            android:textColor="#f3ffb6"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"/>
+
+
+    </LinearLayout>
+
+    
+</LinearLayout>
+

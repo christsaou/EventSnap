@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_grad"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/london_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/bg_grardient_reverse"
+        android:elevation="10dp"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/london_constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#FE840A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/london_toolbar">
+
+        <TextView
+            android:id="@+id/london_textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/acme"
+            android:padding="10sp"
+            android:text="Awesomeness..."
+            android:textColor="#f3ffb6"
+            android:textSize="22sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="@+id/london_imageView2"
+            app:layout_constraintStart_toStartOf="@+id/london_textView2" />
+
+
+        <TextView
+            android:id="@+id/london_textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/acme"
+            android:padding="10sp"
+            android:text="Experience"
+            android:textColor="#f3ffb6"
+            android:textSize="22sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/london_textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:fontFamily="@font/roboto_slab_bold"
+            android:text="London"
+            android:textColor="#351431"
+            android:textSize="34sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/london_textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/acme"
+            android:text="London is a bad habit one hates to lose."
+            android:textColor="#f3ffb6"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/london_textView4" />
+
+        <ImageView
+            android:id="@+id/london_imageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="36dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/london_textView2"
+            app:srcCompat="@drawable/img_2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/london_recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_grad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/london_constraintLayout" />
+
+    <TextView
+        android:id="@+id/london_textView8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FD830A"
+        android:fontFamily="@font/acme"
+        android:text="Current Events in London"
+        android:textAlignment="center"
+        android:textColor="#f3ffb6"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/london_recyclerView" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/londonVertical"
+        android:layout_width="409dp"
+        android:layout_height="264dp"
+        android:background="@drawable/bg_grad"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/london_textView8"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

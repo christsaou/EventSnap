@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- First ImageView -->
+    <ImageView
+        android:id="@+id/firstImageView"
+        android:src="@drawable/nina"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+
+    <TextView
+        android:id="@+id/rightTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/firstImageView"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@id/firstImageView"
+        android:fontFamily="@font/acme"
+        android:text="ddddddd"
+        android:lineSpacingMultiplier="2"
+        android:textColor="#f3ffb6"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/secondImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/nina"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/firstImageView"
+        android:layout_alignStart="@id/firstImageView"
+        android:layout_marginTop="40dp"/>
+
+
+    <TextView
+        android:id="@+id/belowSecondTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/secondImageView"
+        android:layout_alignStart="@id/secondImageView"
+        android:layout_marginTop="20dp"
+        android:text="asssa"
+        android:fontFamily="@font/acme"
+        android:textColor="#f3ffb6"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+
+    <ImageView
+        android:id="@+id/thirdImageView"
+        android:src="@drawable/nina"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/belowSecondTextView"
+        android:layout_alignStart="@id/belowSecondTextView"
+        android:layout_marginTop="40dp"/>
+
+
+    <ImageView
+        android:id="@+id/fourthImageView"
+        android:src="@drawable/nina"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/thirdImageView"
+        android:layout_alignStart="@id/thirdImageView"
+        android:layout_marginTop="40dp"/>
+
+</RelativeLayout>

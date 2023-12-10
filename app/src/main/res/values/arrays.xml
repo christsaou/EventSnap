@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dropdown_options">
+        <item>Choose Type Of Event</item>
+        <item>Music Events</item>
+        <item>Theatres</item>
+        <item>Festivals</item>
+    </string-array>
+</resources>
